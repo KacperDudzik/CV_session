@@ -1,2 +1,4 @@
 milk10k/
 milk10k.zip
+__pycache__/
+*.pyc

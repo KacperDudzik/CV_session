@@ -1,0 +1,5 @@
+augmentation,why_the_label_is_unchanged
+RandomHorizontalFlip p=0.5,The camera may face the lesion from either side.
+RandomRotation 15 degrees,A small tilt does not change the diagnosis.
+"ColorJitter brightness/contrast/saturation 0.1, hue 0",Brightness 0.1 stays under the measured class gap. Hue is off: a factor of 0.02 already exceeds it.
+Resize 224 and /255 then train mean/std,Same geometry and scale at train and test time.

@@ -1,0 +1,5 @@
+stat,width,height
+min,600.0,450.0
+median,600.0,450.0
+max,600.0,450.0
+fraction_both_sides_above_224,1.0,

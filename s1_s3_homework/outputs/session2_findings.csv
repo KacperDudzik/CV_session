@@ -1,0 +1,6 @@
+session_2_finding,still_true,pipeline_consequence
+Benign lesions are younger than malignant ones,yes,"Age may be used, but it is not a pixel feature"
+"diagnosis_2, diagnosis_3 and diagnosis_4 repeat diagnosis_1",yes,Do not use them as inputs
+Histopathology confirmation tracks the malignant class,yes,Do not use diagnosis_confirm_type or biopsy
+Colour histograms of the classes overlap,yes,Do not treat mean colour as the diagnosis
+Every lesion has two image types,yes,Split and score by lesion_id

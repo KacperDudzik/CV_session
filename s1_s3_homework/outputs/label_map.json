@@ -1,0 +1,23 @@
+{
+  "primary_target": "diagnosis_1",
+  "indeterminate_policy": "keep as a third class",
+  "rare_class_policy": "keep every 11-class label and balance with train weights",
+  "diagnosis_1": {
+    "Benign": 0,
+    "Indeterminate": 1,
+    "Malignant": 2
+  },
+  "dx": {
+    "AKIEC": 0,
+    "BCC": 1,
+    "BEN_OTH": 2,
+    "BKL": 3,
+    "DF": 4,
+    "INF": 5,
+    "MAL_OTH": 6,
+    "MEL": 7,
+    "NV": 8,
+    "SCCKA": 9,
+    "VASC": 10
+  }
+}
