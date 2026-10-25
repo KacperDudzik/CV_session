@@ -1,0 +1,13 @@
+feature_set,model,f1,precision,recall,n_features
+all_features,svm,0.567,0.552,0.593,367
+class_33,forest,0.524,0.646,0.503,33
+color_6,knn,0.449,0.453,0.499,6
+colorspace,forest,0.552,0.724,0.532,71
+extended,forest,0.506,0.597,0.494,37
+filters,svm,0.565,0.544,0.612,208
+glcm_shape,svm,0.525,0.511,0.631,29
+hist_24,forest,0.472,0.476,0.471,24
+optional_descriptors,forest,0.534,0.827,0.506,24
+original_plus_advanced,svm,0.511,0.502,0.587,65
+original_plus_filters,svm,0.558,0.539,0.597,244
+texture_3,forest,0.474,0.496,0.461,3

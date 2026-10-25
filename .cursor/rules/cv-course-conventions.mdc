@@ -1,0 +1,32 @@
+---
+description: MILK10k CV course conventions from Sessions 1–5 slides
+globs: session*/**/*,s1_s3_homework/**/*
+alwaysApply: false
+---
+
+# CV course exercise conventions
+
+Full notes: `COURSE_NOTES.md`. Prefer class definitions over inventing alternatives.
+
+## Data
+- Paths: `MILK10K_DIR` or repo-relative `milk10k/` — no absolute machine paths.
+- Split by `lesion_id` (`StratifiedGroupKFold`); never image-row splits.
+- Norm mean/std and imputers: fit on **train only**; same at val/test/inference.
+- Test set: evaluate once; do not tune on it.
+
+## Metrics
+- Report macro-F1 / per-class recall / confusion; do not rely on accuracy alone.
+- Always include a majority-class baseline for comparison.
+
+## Session 4 kernels (use these)
+BOX `/9`, GAUSSIAN `/16` `[[1,2,1],[2,4,2],[1,2,1]]`, SHARPEN `[[0,-1,0],[-1,5,-1],[0,-1,0]]`, SOBEL_X `[[-1,0,1],[-2,0,2],[-1,0,1]]`, SOBEL_Y `[[-1,-2,-1],[0,0,0],[1,2,1]]`.
+Edge magnitude = `hypot(Gx, Gy)`. Output size `(n+2p-k)//s+1`.
+
+## Session 5 features (33)
+Order: RGB means, RGB stds, 8-bin hist fractions per R/G/B (`range=(0,256)`), then texture.
+Texture gray = `rgb.mean(axis=2)`: edge_density = mean hypot(sobel), roughness = mean local var via `uniform_filter` size 9, laplacian_variance = `laplace(gray).var()`.
+
+## Style
+- Minimal computation scripts; no PDF builders inside homework `.py` unless asked.
+- Match feature/metric names from the brief when printing.
+---

@@ -1,0 +1,7 @@
+stage,class,count,share
+before,Benign,2076,0.2829880043620502
+before,Indeterminate,174,0.02371864776444929
+before,Malignant,5086,0.6932933478735005
+after_oversample,Benign,5086,0.3333333333333333
+after_oversample,Indeterminate,5086,0.3333333333333333
+after_oversample,Malignant,5086,0.3333333333333333

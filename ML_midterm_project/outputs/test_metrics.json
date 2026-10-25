@@ -1,0 +1,100 @@
+{
+  "model": "svm",
+  "feature_set": "all_features",
+  "balance": "oversample",
+  "params": {
+    "clf__estimator__C": 1.0,
+    "clf__estimator__kernel": "rbf"
+  },
+  "validation": {
+    "precision": 0.55173880160395,
+    "recall": 0.5929328050488069,
+    "f1": 0.5671059083975215,
+    "satisfaction": 0.5705925050167594,
+    "train_f1": 0.7468094755029734,
+    "overfit_gap_f1": 0.17970356710545188
+  },
+  "test": {
+    "accuracy": 0.7404580152671756,
+    "precision": 0.5767753642337438,
+    "recall": 0.633963633963634,
+    "f1": 0.5974095846687549,
+    "satisfaction": 0.6027161942887109,
+    "roc_auc_macro": 0.8050339112091107,
+    "pr_auc_macro": 0.6153221647710264,
+    "malignant_false_negatives": 89,
+    "malignant_false_negative_rate": 0.2445054945054945,
+    "per_class": {
+      "Benign": {
+        "precision": 0.5714285714285714,
+        "recall": 0.7297297297297297,
+        "f1": 0.6409495548961425,
+        "support": 148
+      },
+      "Indeterminate": {
+        "precision": 0.29411764705882354,
+        "recall": 0.4166666666666667,
+        "f1": 0.3448275862068966,
+        "support": 12
+      },
+      "Malignant": {
+        "precision": 0.8647798742138365,
+        "recall": 0.7554945054945055,
+        "f1": 0.8064516129032258,
+        "support": 364
+      }
+    }
+  },
+  "majority_test": {
+    "precision": 0.2315521628498728,
+    "recall": 0.3333333333333333,
+    "f1": 0.2732732732732733,
+    "satisfaction": 0.27938625648549315
+  },
+  "cv": {
+    "f1_mean": 0.4840401426441446,
+    "f1_std": 0.010725647867150153,
+    "precision_mean": 0.49563284012965714,
+    "recall_mean": 0.4801830280956144,
+    "satisfaction_mean": 0.4866186702898053
+  },
+  "baseline_compare": [
+    {
+      "feature_set": "extended",
+      "model": "forest",
+      "f1": 0.506,
+      "precision": 0.597,
+      "recall": 0.494,
+      "balance": "oversample"
+    },
+    {
+      "feature_set": "class_33",
+      "model": "forest",
+      "f1": 0.524,
+      "precision": 0.646,
+      "recall": 0.503,
+      "balance": "oversample"
+    },
+    {
+      "feature_set": "all_features",
+      "model": "svm",
+      "f1": 0.567,
+      "precision": 0.552,
+      "recall": 0.593,
+      "balance": "oversample"
+    },
+    {
+      "feature_set": "original_plus_filters",
+      "model": "svm",
+      "f1": 0.558,
+      "precision": 0.539,
+      "recall": 0.597,
+      "balance": "oversample"
+    }
+  ],
+  "split_fractions": {
+    "train": 0.7,
+    "val": 0.2,
+    "test": 0.1
+  }
+}

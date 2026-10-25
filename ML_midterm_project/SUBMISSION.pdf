@@ -1,0 +1,436 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document (opensource)
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 7 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Times-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session)
+>> /Border [ 0 0 0 ] /Rect [ 109.5136 714.5354 294.2336 726.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+6 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/tree/main/ML_midterm_project)
+>> /Border [ 0 0 0 ] /Rect [ 121.9936 696.5354 211.4336 708.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+8 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/main.py)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 265.7354 94.27362 276.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+9 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/config.py)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 251.7354 99.26862 262.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+10 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/data.py)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 237.7354 91.26762 248.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+11 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/preprocess.py)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 223.7354 114.7576 234.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+12 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/features.py)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 209.7354 104.7586 220.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+13 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/kernels.py)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 195.7354 102.2656 206.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+14 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/descriptors.py)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 181.7354 115.7656 192.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+15 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/shape_texture.py)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 167.7354 126.2596 178.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+16 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/augment.py)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 153.7354 107.2696 164.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+17 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/balance.py)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 139.7354 103.7596 150.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+18 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/quality.py)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 125.7354 101.2756 136.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+19 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/train.py)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 111.7354 92.77062 122.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+20 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/evaluate.py)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 97.73543 106.2616 108.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+21 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/requirements.txt)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 83.73543 123.7666 94.53543 ] /Subtype /Link /Type /Annot
+>>
+endobj
+22 0 obj
+<<
+/Annots [ 5 0 R 6 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 
+  16 0 R 17 0 R 18 0 R 19 0 R 20 0 R 21 0 R ] /Contents 52 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 51 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+23 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/models/majority.py)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 779.7354 135.2776 790.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+24 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/models/logistic.py)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 765.7354 131.2816 776.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+25 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/models/tree.py)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 751.7354 118.2676 762.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+26 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/models/knn.py)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 737.7354 118.2766 748.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+27 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/models/svm.py)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 723.7354 119.7796 734.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+28 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/models/forest.py)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 709.7354 125.2696 720.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+29 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/models/__init__.py)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 695.7354 134.7826 706.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+30 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/outputs/REPORT.md)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 615.7354 142.2886 626.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+31 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/outputs/test_metrics.json)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 601.7354 154.7806 612.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+32 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/outputs/best_config.json)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 587.7354 153.2776 598.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+33 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/outputs/val_leaderboard.csv)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 573.7354 166.2556 584.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+34 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/outputs/feature_ablation.csv)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 559.7354 166.7596 570.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+35 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/outputs/cv_folds.csv)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 545.7354 139.2736 556.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+36 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/outputs/confusion_test.csv)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 531.7354 160.7746 542.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+37 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/outputs/confusion_test.png)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 517.7354 162.2776 528.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+38 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/outputs/feature_importance.csv)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 503.7354 178.2526 514.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+39 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/outputs/feature_importance.png)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 489.7354 179.7556 500.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+40 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/outputs/class_distribution.png)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 475.7354 173.2846 486.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+41 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/outputs/class_balance_report.csv)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 461.7354 183.7516 472.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+42 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/outputs/subgroup_metrics.csv)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 447.7354 172.7716 458.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+43 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/outputs/train_lesions.csv)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 433.7354 154.2766 444.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+44 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/outputs/val_lesions.csv)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 419.7354 148.7776 430.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+45 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/outputs/test_lesions.csv)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 405.7354 150.2806 416.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+46 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/outputs/model.joblib)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 391.7354 139.7866 402.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+47 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/KacperDudzik/CV_session/blob/main/ML_midterm_project/outputs/features_v2.csv)
+>> /Border [ 0 0 0 ] /Rect [ 65.02362 377.7354 150.2626 388.5354 ] /Subtype /Link /Type /Annot
+>>
+endobj
+48 0 obj
+<<
+/Annots [ 23 0 R 24 0 R 25 0 R 26 0 R 27 0 R 28 0 R 29 0 R 30 0 R 31 0 R 32 0 R 
+  33 0 R 34 0 R 35 0 R 36 0 R 37 0 R 38 0 R 39 0 R 40 0 R 41 0 R 42 0 R 
+  43 0 R 44 0 R 45 0 R 46 0 R 47 0 R ] /Contents 53 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 51 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+49 0 obj
+<<
+/PageMode /UseNone /Pages 51 0 R /Type /Catalog
+>>
+endobj
+50 0 obj
+<<
+/Author (Kacper Dudzik) /CreationDate (D:20261025181815+01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261025181815+01'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (MILK10k Classical ML Midterm \204 Submission) /Trapped /False
+>>
+endobj
+51 0 obj
+<<
+/Count 2 /Kids [ 22 0 R 48 0 R ] /Type /Pages
+>>
+endobj
+52 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 2886
+>>
+stream
+GauHM9lo&O%_hgAi97h=Bp&76G4s:[:"jHi9c_"%Me=fP9\XA/;'i3;l*&tfA_B[l`EM^eLSg@;&\nJM+@$>f\:Eu(,QmfqJ`/Tn9OP.+lm!T!Qge_;qq8#p0E_u.M&-e\_AEG_i'W\#IeF2t"hEuJR&lW1Im]T60K^_56aImYB"9<T&IEF[/kkES^\W!H'ta3ZQ;XQ(6;tCgabo6i/fBp7c^/UikF0NZ"=??@neV_+YOH8Sqqh4a=%3.nMLMCr#M?.p2CeFH6roP@8\!l>M]?CoLRWn#A-HJ/Lh4l>Gs*H!C+)9@MPWFJ[A'j<k.(rGFqq%,YfKtTC>GT`^=4YV:T]GTg3r`gPCcC$=O)Efq[Ns@ncB^<j,74R!C?\j#`8])J9VYM\9^d+k'p9NbR1&R(@l0@=o4psa0;_R0%B-)\E%s9c;5^j@:`2Fc1()n:,-<"ES.L7jR5#Yo[,(e%E!aXr$)Z_QJr-B1b;$UBC_^8=-n,6[=@Y&lH<T@/)kMX`I<QW5Ie+\6L4+cg[ON=";@drm#fXX*'PFs(I'=`?9Eh],P44+#F:7a!A,b(!f9(e[%s,kKk).pQ^dJqKohtqGs4ceNP:9c_%URY:?8WS)@.Z?"pHZ[mh1`t<&.ICjr+[_EoT.O,HK(@;-ccuMJ6XEai'^G$HdbA,Z(EB%[L"W"e.m?%Z*9c/uTuUg&]/jQ=pH.-[;:5T3(l"1m)6dNZGa+8q^^^oSUIOMVft7VG7)Qk;e_Knq7lJBF\UV7@C70*&LUJW.kfZ-A]NKrD*uP(6>*laKe/u"[R2GZj2Jt'.E$AA5tGpci#meg;9O$6'#9SC)6u#TKK'WPQ=cGX!'=DG^>G,qjg0/gm)`Cr-J,-bP3C\Ba5c.mi^Zo"Vp/``9-4a0XdVj]E"NR:"'d\&g[?WElg)&CPDC6h*JW-rt"?iH=]#bcVa5^6($E.%aR(6CdapMp*+;tr"]65_5;`T"pq\ASEDt?&Z%*PXbQ/o<-JiU-0jHcLCfEt5aJq^a\'NgJD!BMEQ.JuhU^(;B+)GVcjrf.lUDVA):cidW=EA!8+*WjjrsL1cgCNS&c%#3952jD#GGK%3r/uAO@7q+podA+4,'0Y/"$%N+3kldq^4l$oE;$:N*u#nPAa3?HpZ<SY4fn2AD,9V2P&0-9(R_,JhTI=X@QJ_^9O)hMu9s-WMq<L0E"]n:6Psmq6\s0f_&)]it6NEF+9nrJbl!Dp2Y*q,2gE@$8@KKJ7FZL(4SL=TCLOSL5:!(Vb%Qc&45^4rf,%s%=K-W,D&$:`c99"5"S@<PGeB73!^'*"2F!4Q7T:2bPgd\\B+EX;9_::#u/kahA@Im)FZOP3Sr*FOV$I_DcF6?R]?V"?@)U)EV:p8ppT>ZD`8_Q1"d"u)dlS8S&97SB1Pi5a*u:tU*(Rq^_#Sc@+8R)GqH*pLiDEnjLZfG>86RC`.^nhU)"G1+L^Y0-VUr7%.(RH-R#HL>nm,&!R!F'5nk?DI)?kKrW13OX,[Zm^0T9+_)&1H\c*?B+XGZ80^Y>3bOjkGqnoSnY8CP5]L0uJ3Bchmml,#Oh>mVbS>-:d8O!1>@JJ5;JW!#AL6qq$07(]pa#`TugVaa;gKPMHgO/HRHYpNt?8OY80,++T6Jubf?J$NJiJ)mC-3;/&68V#8jLUVPc,3!`p+_Fei`Yj7@7)BEO5,j>=RtT_9+G5A`K=Mil\DU-(o%oer3OZ:2=Z#t8b<pVd/=AZLI*$Mm8`.r@*dCK'@JT6FuFUFpDHZ*nc[ifa3t]@;="KeBtGEj\r/nfIZr0D06<Rt3<(qUUS6@9Q;I;fB=F?W!F4^+Q>D#](dB[1e%Y45hEB4"7%QS::HG"Da='7GPi<pt&Z&/po/()6m9ai2\XYejl8GWHHfT;1\o-.U0eZJ&3ZPk*\F"LpL/e%L(mnTBo+-;9=IVXo@#pC^ZND!tMQ;TT#a&NnZnj]2Cd2H]h3?:R+J=#VhO`/q):GEfb9n\@ch2#.CpIDOd_p="<$j+#c>K2Q75W8!#KQu@%3TElBn=M"&b1q#X?&ANTls0'8f<$/go4,V6Q,"8S\Un5&CsQ@N?g&$T;rG%HJoeCfFZK>k<_Ras#:#A<7<c#/d7ftD>$2#++852Mi]jtX!+8B/:W<smmsYiaU0I0VGnLFA#B$>k.pcO__<Yu3rFAH41q@F#BCt^)>N$ma!6Ssg7O"5B7RH1S-H,@K<oG,gVEY4q3'ntKpuh%3sb,]<:J2/2jVeC]ZtSB4$Dc-!92"gpQ#@-'[d1nKSWEa"7Vo(S>E@_I1X/J(UR/!dsS)p<#.#,Z>:kP)W$8f98Ak@882PS(N^uL]Ru.YTZSg\P'96t;8`DRME;&s*>AV),9;X#S>epI64;J\'+5J=1kd`Sk>)S8VG_Hr^u^>e#<mXLE8]m%q4n*ti>YaLVN;S'6B$^:*XA$8d=U1gp<*SB)djJKB3,Qg+r-r-,V>9n;E:sjV;t8?">["F_(O7=[GVKd6W6N[Bcr6,8"rJrV&@jmiFSoq"*7k*7EQ#"J/$_'!XE>#03:2I8duGrCIsdOe'S>O7#I]@I#W.(T7cUcb]/-0Mc"T_VH_@Q>N9c\4`m^)R/0*I\R_/R@?#cWlAE\f'ShF)2TS3QJg8auc]Y/15IEe#`KfHYdVLE=E^o.u?5BNN,%JcHPgOihA578i#'6rSjKm:-f;0tT\#9WC+`.JA#Xs2a*.52SD?I)6IG=J2W@e31D:Z.05E+*j9%Dc?7B.f4/[_!u&0H[,I3%(r-<->9):O`rb(9;:T/j]n6:bs&g4AdllYkei:oUuC-[43N0mNlRRR5_g*ANG!ml8tn?K(9nW7AlAS/(1fRjXa:AaB3M:qZ+%`Er?gR.c6E7HZ*%7[)BpjQ1mqHN+._R=`6~>endstream
+endobj
+53 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1907
+>>
+stream
+GauI8>uTK=&;KZL'miNuJFL%3kuE:$4%"c=1-IS?A7Sna6tOK*jD]-gr>E]eF_Ltrc1)5FGjT_RAG']Fn\G;<I/>_'!)=>LEoDWm^g[IrKHaN'_>D3fpObBDLH%_/&1.FRkmYO>*'mmO\8F+3GT]WmY^=0*"<K*D35"k3oF3A>@I]\@rR)?Ni]SLCmGiT(\NJg4(GncpW$(b0&4bQK$uYrG*e[#*jE1VR(Eq!sK'bEu_I4_t_UM/2mtIQ`Ms@E=BU:Us_Hd_Kn>X$KS275\A69F53Vb-"07+Q_d0,DS+q@(6JqA5*M@gLJ<LW&&7T\DgOJJ+/.4Y)m5-[$IT:Ujk:E6)O)HT:0'&mAA:3(*"J-d,Z,toYYdM$n\8fWkcnr7],P]+U4?qHRe:2%2`6mL4^2F0"tS">Fo9n^qS)9#'^.MnT/YFiTi%$ki62l@I2GF2l01Pmt<mbSAfj@s(.4V=%NGUSBf@9Nt9,VDtRQkuKK2X"^)aa=.WmYeTbbY];)7r_Za.AqL&FHJT$]V#GZ`&KMP>&FT'8Y-^s;\1#F(<"<`d#e]PSqf%P)kn7J'jt>JQC=sqXqf_4?;g`qabH$s&pc4scW^:oAn!qaUQ8;+$KD[5%rh<(0rTno1fobN-6D)r8-6157?`o:Z7Y8tJXY/5)h/6#kV_HJ:^&A>8Xc,[L>\$<r#=k-'MZ+B/aQcROHQPGnA<tcU5T*6k0!,Z4I^sK[89g1\O?U,gRk2iHQoUn.RcW9s&i?Z7b<W#-TCKY?f*D2<UB1MLgH"6/J6[$$cc.S9fE/t`l+@>?g*D-5g@OD9uhh57-S8aVW_?/mF"p@(K10(31/W09tuW9Sk[QsoL3#PAq/[+mkA;W;_Ij&Q>T<E;pNX.CuZF4:.*a]31Z_1k_hD[q4<Y!0Gk%0K@uD">S*;0/.7]Cc2NT8(kW90AoB@dC%%Vo`8V+"MS@.f`6p=W7r1VuDBrBEN*-j4A8U80+rYX@"'@u*\9_N#jm!Eb7[eY;=fqlXP`sIj'MV:/3;X%0&6*NcZ2oo1)uflXka/I3(In!5V6N5tP2NC\*:oK9XduC+`l]B5Tu(!]Ig2#*Vss>MLl54nhUA*YWd2.iK7/D`9mo9V&:7=mH;DIj:O\+O@/`4\7&sK^NHn9*1+;o0$6!Pn!3p2qJYDg,SAZV9Nnjd2&9HCQ`uh+3(0?_qi9,M#kMA-b5r.#mbTq74QuaFq)S>l,Q_=^Kc7o,Y>0-omhA:/IedSCklnrI!#aXUh-f"uVg6'O6R7a"-PpUMOY@muemu'0+.n+//P*]phdW>VQk8P5<gFdGa_[qM83.,)OI00?,g$%H&:h%S6N0l3BNG)apTT+Pak<g*^;g<Ua`5O,ml.B%14k2Yjk\L2Po,F(0.K$h+ikcD)i)PL<0348#4F`,_31n"(q]bGA9U^oFCj'QNmR>-/[_ITl>*B"/\l"'=++Pc1^pa+acP07O3XqujD?=G[S`+rj$Kse]T3fBANi@X9b6`cAU1hZnR!-Od&^4S4MN[p*j<0Fl428IDQO,5Lf2Q\5BUFtmOe?GY2;h^HV8,.%nL2!L&Y'3AL4[K=W*Ih/[r]ib;,22V?pi%'4-A[eDOdeI7G;Cg"l!Vd1e'sNCd.UIWHKj^L,6uNVF1HN"Rq.:>ag5Pm542$]&h1U7[Qb.?OK:^Jp0pl&[#?)m&$trWgP;Yo.9bca+CWLK#O1c"%P09TMI=8i[@>"Ro.'B71*_<VQ?8HpVq,pRVo$i#d.t7+3^B#.[RNn6CKP3c7nG9,PZecV!85g:-Ti:L[3,.\G^ZW\9h^!b8J-ZD;-un"jk<3906h576qK4?>l*?>YnZ;9r*3XGGf*:mt#9XZQ62s*Z*O\VNkHQH7^$E]C4<EN0%F2+0(f^RZ(s79;8!fn_rCj(<c=%~>endstream
+endobj
+xref
+0 54
+0000000000 65535 f 
+0000000061 00000 n 
+0000000122 00000 n 
+0000000229 00000 n 
+0000000337 00000 n 
+0000000446 00000 n 
+0000000640 00000 n 
+0000000863 00000 n 
+0000000968 00000 n 
+0000001199 00000 n 
+0000001432 00000 n 
+0000001664 00000 n 
+0000001902 00000 n 
+0000002138 00000 n 
+0000002373 00000 n 
+0000002612 00000 n 
+0000002853 00000 n 
+0000003088 00000 n 
+0000003323 00000 n 
+0000003558 00000 n 
+0000003791 00000 n 
+0000004027 00000 n 
+0000004268 00000 n 
+0000004597 00000 n 
+0000004840 00000 n 
+0000005083 00000 n 
+0000005322 00000 n 
+0000005560 00000 n 
+0000005798 00000 n 
+0000006039 00000 n 
+0000006282 00000 n 
+0000006524 00000 n 
+0000006774 00000 n 
+0000007023 00000 n 
+0000007275 00000 n 
+0000007528 00000 n 
+0000007773 00000 n 
+0000008024 00000 n 
+0000008275 00000 n 
+0000008530 00000 n 
+0000008785 00000 n 
+0000009040 00000 n 
+0000009297 00000 n 
+0000009550 00000 n 
+0000009800 00000 n 
+0000010048 00000 n 
+0000010297 00000 n 
+0000010542 00000 n 
+0000010790 00000 n 
+0000011189 00000 n 
+0000011259 00000 n 
+0000011571 00000 n 
+0000011639 00000 n 
+0000014617 00000 n 
+trailer
+<<
+/ID 
+[<68b3ece50ba441e40679f870f46a09e0><68b3ece50ba441e40679f870f46a09e0>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 50 0 R
+/Root 49 0 R
+/Size 54
+>>
+startxref
+16616
+%%EOF
