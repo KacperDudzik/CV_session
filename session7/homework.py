@@ -5,8 +5,8 @@
 3. Optional strategy 3: fine-tune the whole ResNet-18.
 
 Run:
-  python homework.py              # train, score test once, write PDF
-  python homework.py pdf-only     # rebuild PDF from saved JSON
+  python homework.py         # train, score test once, write JSON
+  python homework.py smoke   # lightweight checks only
 """
 
 from __future__ import annotations
@@ -15,7 +15,6 @@ import json
 import sys
 from pathlib import Path
 
-import pandas as pd
 import torch
 import torch.nn as nn
 from sklearn.metrics import f1_score
@@ -26,8 +25,6 @@ import session7 as s7
 ROOT = Path(__file__).resolve().parents[1]
 OUT = s7.OUTPUT_DIR
 RESULTS_PATH = OUT / "homework_results.json"
-PDF_PATH = Path(__file__).resolve().parent / "HOMEWORK.pdf"
-REPO_URL = "https://github.com/KacperDudzik/CV_session"
 MIDTERM_METRICS = ROOT / "ML_midterm_project" / "outputs" / "test_metrics.json"
 
 # Course notebook baselines (Session 5 forest / Session 6 MLP on the same 33 features).
@@ -264,169 +261,6 @@ def run_homework(
     return summary
 
 
-def write_pdf(summary: dict | None = None) -> Path:
-    from reportlab.lib import colors
-    from reportlab.lib.pagesizes import A4
-    from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
-    from reportlab.lib.units import cm
-    from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
-
-    if summary is None:
-        summary = json.loads(RESULTS_PATH.read_text(encoding="utf-8"))
-
-    styles = getSampleStyleSheet()
-    title = ParagraphStyle("T", parent=styles["Heading1"], fontSize=16, spaceAfter=8)
-    h2 = ParagraphStyle("H2", parent=styles["Heading2"], fontSize=12, spaceBefore=10, spaceAfter=6)
-    body = ParagraphStyle("B", parent=styles["Normal"], fontSize=10, leading=13, spaceAfter=6)
-    small = ParagraphStyle("S", parent=styles["Normal"], fontSize=8, leading=10, textColor=colors.HexColor("#444444"))
-    link = ParagraphStyle("L", parent=styles["Normal"], fontSize=9, leading=12, textColor=colors.HexColor("#0B57D0"))
-
-    doc = SimpleDocTemplate(
-        str(PDF_PATH),
-        pagesize=A4,
-        leftMargin=1.6 * cm,
-        rightMargin=1.6 * cm,
-        topMargin=1.4 * cm,
-        bottomMargin=1.4 * cm,
-    )
-    story = []
-    best = summary["best_model"]
-
-    story.append(Paragraph("Session 7 Homework — Scoreboard & Strategy 3", title))
-    story.append(Paragraph("Kacper Dudzik · MILK10k dermoscopic classification (macro-F1)", body))
-    story.append(Paragraph(f'<link href="{REPO_URL}">{REPO_URL}</link>', link))
-    story.append(
-        Paragraph(
-            f'Code: <link href="{REPO_URL}/blob/main/session7/homework.py">'
-            f"session7/homework.py</link> · "
-            f'<link href="{REPO_URL}/blob/main/session7/session7.py">session7/session7.py</link> · '
-            f'<link href="{REPO_URL}/blob/main/session7/_output/homework_results.json">'
-            f"homework_results.json</link>",
-            link,
-        )
-    )
-    story.append(Spacer(1, 0.2 * cm))
-
-    story.append(Paragraph("1. Scoreboard (Sessions 5–7)", h2))
-    story.append(
-        Paragraph(
-            "Metric: lesion-level <b>macro-F1</b>. Session 7 rows were trained in this homework run; "
-            "test is scored once after the best validation epoch.",
-            body,
-        )
-    )
-
-    table_data = [["Model", "Val macro-F1", "Test macro-F1"]]
-    for row in summary["scoreboard"]:
-        table_data.append(
-            [
-                Paragraph(row["model"], small),
-                f"{row['val_macro_f1']:.3f}",
-                f"{row['test_macro_f1']:.3f}",
-            ]
-        )
-    tbl = Table(table_data, colWidths=[11.2 * cm, 2.6 * cm, 2.8 * cm])
-    tbl.setStyle(
-        TableStyle(
-            [
-                ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#1F3A5F")),
-                ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
-                ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
-                ("FONTSIZE", (0, 0), (-1, -1), 8),
-                ("GRID", (0, 0), (-1, -1), 0.4, colors.HexColor("#CCCCCC")),
-                ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
-                ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, colors.HexColor("#F5F7FA")]),
-                ("LEFTPADDING", (0, 0), (-1, -1), 4),
-                ("RIGHTPADDING", (0, 0), (-1, -1), 4),
-                ("TOPPADDING", (0, 0), (-1, -1), 4),
-                ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
-            ]
-        )
-    )
-    story.append(tbl)
-    story.append(Spacer(1, 0.25 * cm))
-    story.append(
-        Paragraph(
-            f"<b>Best model:</b> {best['name']} — "
-            f"val {best['val_macro_f1']:.3f}, <b>test macro-F1 = {best['test_macro_f1']:.3f}</b>.",
-            body,
-        )
-    )
-
-    story.append(Paragraph("2. DenseNet vs ResNet (one sentence)", h2))
-    story.append(Paragraph(summary["densenet_vs_resnet"], body))
-
-    story.append(Paragraph("3. Optional: full fine-tuning (strategy 3)", h2))
-    ft = summary["strategy3_full_finetune"]
-    s2 = summary["s7_runs"]["s7_ft_layer4"]
-    story.append(
-        Paragraph(
-            "Strategy 3 unfreezes every ResNet-18 parameter (≈11.2M trainable) and trains at lr=1e-4 "
-            "with class-weighted CE and flips, same protocol as partial fine-tuning.",
-            body,
-        )
-    )
-    cmp = Table(
-        [
-            ["Setting", "Trainable params", "s/epoch", "Val F1", "Test F1"],
-            [
-                "Strategy 2 (layer4+fc)",
-                f"{s2['n_trainable']:,}",
-                f"{s2['mean_seconds_per_epoch']:.0f}",
-                f"{s2['val_macro_f1']:.3f}",
-                f"{s2['test_macro_f1']:.3f}",
-            ],
-            [
-                "Strategy 3 (full network)",
-                f"{ft['n_trainable']:,}",
-                f"{ft['mean_seconds_per_epoch']:.0f}",
-                f"{ft['val_macro_f1']:.3f}",
-                f"{ft['test_macro_f1']:.3f}",
-            ],
-        ],
-        colWidths=[4.5 * cm, 3.2 * cm, 2.2 * cm, 2.2 * cm, 2.2 * cm],
-    )
-    cmp.setStyle(
-        TableStyle(
-            [
-                ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#1F3A5F")),
-                ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
-                ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
-                ("FONTSIZE", (0, 0), (-1, -1), 8),
-                ("GRID", (0, 0), (-1, -1), 0.4, colors.HexColor("#CCCCCC")),
-                ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, colors.HexColor("#F5F7FA")]),
-                ("ALIGN", (1, 0), (-1, -1), "CENTER"),
-            ]
-        )
-    )
-    story.append(cmp)
-    story.append(Spacer(1, 0.2 * cm))
-
-    delta = ft["test_macro_f1"] - s2["test_macro_f1"]
-    if delta > 0.01:
-        verdict = "Full fine-tuning improved test macro-F1 enough to be useful here."
-    elif delta > 0:
-        verdict = "Full fine-tuning helped only slightly on test; cost is higher."
-    else:
-        verdict = "Full fine-tuning did not beat partial layer4 fine-tuning on test; keep strategy 2 as default."
-    story.append(Paragraph(f"<b>Finding:</b> {verdict}", body))
-
-    story.append(Paragraph("Notes", h2))
-    for note in summary.get("notes", []):
-        story.append(Paragraph(f"- {note}", small))
-    story.append(
-        Paragraph(
-            f"Device: {summary.get('device')} · seed {summary.get('seed')} · "
-            f"splits {summary.get('split')}",
-            small,
-        )
-    )
-
-    doc.build(story)
-    print("wrote", PDF_PATH)
-    return PDF_PATH
-
-
 def smoke_test() -> None:
     """Lightweight checks that do not need MILK10k or GPU."""
     assert "concatenat" in DENSENET_VS_RESNET.lower() or "dense" in DENSENET_VS_RESNET.lower()
@@ -442,13 +276,8 @@ def main(argv: list[str]) -> None:
     if argv and argv[0] == "smoke":
         smoke_test()
         return
-    if argv and argv[0] == "pdf-only":
-        write_pdf()
-        return
     smoke_test()
-    summary = run_homework()
-    write_pdf(summary)
-    # Drop rebuilt cache so it cannot re-enter git.
+    run_homework()
     if s7.CACHE_PATH.is_file():
         s7.CACHE_PATH.unlink()
         print("removed cache", s7.CACHE_PATH)
