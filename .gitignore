@@ -2,3 +2,7 @@ milk10k/
 milk10k.zip
 __pycache__/
 *.pyc
+*.pt
+*.joblib
+**/features_v2.csv
+**/images_*.pt

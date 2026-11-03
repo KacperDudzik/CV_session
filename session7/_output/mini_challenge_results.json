@@ -1,0 +1,110 @@
+{
+  "epochs": 6,
+  "lr": 0.0001,
+  "seed": 0,
+  "runs": {
+    "layer4_only": {
+      "layers": [
+        "layer4",
+        "fc"
+      ],
+      "n_trainable": 8395267,
+      "mean_seconds_per_epoch": 98.04152878331176,
+      "best_epoch": 3,
+      "best_val_macro_f1": 0.6450693653255349,
+      "epoch_history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.8889079486530765,
+          "val_f1": 0.5548610688721579,
+          "seconds": 101.44835289998446
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.6010898949665747,
+          "val_f1": 0.6181526287088351,
+          "seconds": 96.9496789999539
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.4724188906220859,
+          "val_f1": 0.5491210368128111,
+          "seconds": 97.47001779999118
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.4239628988042913,
+          "val_f1": 0.6450693653255349,
+          "seconds": 97.59364400000777
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.3422353222494947,
+          "val_f1": 0.6076154151899679,
+          "seconds": 97.47482020000461
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.30306160664480414,
+          "val_f1": 0.6100922713515908,
+          "seconds": 97.31265879992861
+        }
+      ]
+    },
+    "layer3_and_4": {
+      "layers": [
+        "layer3",
+        "layer4",
+        "fc"
+      ],
+      "n_trainable": 10494979,
+      "mean_seconds_per_epoch": 122.730643649993,
+      "best_epoch": 3,
+      "best_val_macro_f1": 0.6598244017648796,
+      "epoch_history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.8805586393422883,
+          "val_f1": 0.5407862617284067,
+          "seconds": 122.74743210000452
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.5770428597992093,
+          "val_f1": 0.5969492015156241,
+          "seconds": 123.5654729999369
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.4386969729039245,
+          "val_f1": 0.5359734747193553,
+          "seconds": 122.29212680005003
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.4013653483359608,
+          "val_f1": 0.6598244017648796,
+          "seconds": 123.09718369995244
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.3676264281491287,
+          "val_f1": 0.595884590817712,
+          "seconds": 122.43139439995866
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.3036642029085232,
+          "val_f1": 0.6207564442603322,
+          "seconds": 122.25025190005545
+        }
+      ]
+    }
+  },
+  "comparison": {
+    "delta_val_macro_f1": 0.014755036439344615,
+    "delta_seconds_per_epoch": 24.689114866681237,
+    "worth_unfreezing_layer3": true,
+    "decision": "Worth it: layer3+layer4 improves validation macro-F1 enough to justify the cost."
+  }
+}

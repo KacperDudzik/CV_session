@@ -1,0 +1,330 @@
+{
+  "seed": 0,
+  "device": "cpu",
+  "split": {
+    "train": 3668,
+    "val": 1048,
+    "test": 524
+  },
+  "densenet_vs_resnet": "DenseNet differs from ResNet by concatenating each layer's feature maps to all later layers (dense connectivity) instead of adding residual skip connections, which encourages feature reuse and typically needs fewer parameters.",
+  "scoreboard": [
+    {
+      "model": "Session 5 - random forest (33 features, course)",
+      "val_macro_f1": 0.534,
+      "test_macro_f1": 0.495,
+      "source": "session6 notebook / course baseline_scores"
+    },
+    {
+      "model": "Session 5+ midterm SVM (all_features, oversample)",
+      "val_macro_f1": 0.5671059083975215,
+      "test_macro_f1": 0.5974095846687549,
+      "source": "ML_midterm_project/outputs/test_metrics.json"
+    },
+    {
+      "model": "Session 6 - MLP 33-64-3 (33 features)",
+      "val_macro_f1": 0.493,
+      "test_macro_f1": 0.472,
+      "source": "session6/class.ipynb"
+    },
+    {
+      "model": "Session 7 - SimpleCNN (scratch)",
+      "val_macro_f1": 0.5223824777655577,
+      "test_macro_f1": 0.5095516342904317,
+      "source": "homework run"
+    },
+    {
+      "model": "Session 7 - ResNet-18 frozen + linear head (strategy 1)",
+      "val_macro_f1": 0.6286040760850969,
+      "test_macro_f1": 0.5601061001265362,
+      "source": "homework run"
+    },
+    {
+      "model": "Session 7 - ResNet-18 fine-tune layer4+fc (strategy 2)",
+      "val_macro_f1": 0.6450693653255349,
+      "test_macro_f1": 0.6132085643185695,
+      "source": "homework run"
+    },
+    {
+      "model": "Session 7 - ResNet-18 fine-tune layer3+layer4+fc",
+      "val_macro_f1": 0.6598244017648796,
+      "test_macro_f1": 0.5807878635403598,
+      "source": "homework run"
+    },
+    {
+      "model": "Session 7 - ResNet-18 full fine-tune (strategy 3)",
+      "val_macro_f1": 0.6444389349854238,
+      "test_macro_f1": 0.5644364384971694,
+      "source": "homework run"
+    }
+  ],
+  "best_model": {
+    "name": "Session 7 - ResNet-18 fine-tune layer4+fc (strategy 2)",
+    "val_macro_f1": 0.6450693653255349,
+    "test_macro_f1": 0.6132085643185695
+  },
+  "strategy3_full_finetune": {
+    "model": "Session 7 - ResNet-18 full fine-tune (strategy 3)",
+    "layers": null,
+    "n_trainable": 11178051,
+    "mean_seconds_per_epoch": 161.07169186661486,
+    "best_epoch": 3,
+    "val_macro_f1": 0.6444389349854238,
+    "test_macro_f1": 0.5644364384971694,
+    "epoch_history": [
+      {
+        "epoch": 0,
+        "train_loss": 0.8785451041573137,
+        "val_f1": 0.5381622901608111,
+        "seconds": 188.87132329994347
+      },
+      {
+        "epoch": 1,
+        "train_loss": 0.5868177054492572,
+        "val_f1": 0.5906946555217831,
+        "seconds": 163.94426639995072
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.46260719314916315,
+        "val_f1": 0.5378562981823024,
+        "seconds": 152.2440166999586
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.3984960549010315,
+        "val_f1": 0.6444389349854238,
+        "seconds": 145.23241269995924
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.3886806957399312,
+        "val_f1": 0.5820218337465823,
+        "seconds": 146.65447989990935
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.3581959429555527,
+        "val_f1": 0.5748934415011875,
+        "seconds": 169.48365219996776
+      }
+    ]
+  },
+  "s7_runs": {
+    "s7_simple_cnn": {
+      "model": "Session 7 - SimpleCNN (scratch)",
+      "val_macro_f1": 0.5223824777655577,
+      "test_macro_f1": 0.5095516342904317,
+      "best_epoch": 7,
+      "epoch_history": [
+        {
+          "epoch": 0,
+          "train_loss": 1.5618566212243317,
+          "val_f1": 0.3942420177915918,
+          "seconds": 33.98709800001234
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.9660093255235429,
+          "val_f1": 0.4299035281467784,
+          "seconds": 31.269322199979797
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.9400685676571587,
+          "val_f1": 0.5106304167748476,
+          "seconds": 29.616397300036624
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.91064128945932,
+          "val_f1": 0.5080993406755044,
+          "seconds": 30.40259720000904
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.9066365375513599,
+          "val_f1": 0.4717318600537655,
+          "seconds": 30.330417299992405
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.8634787918827136,
+          "val_f1": 0.4806883665700415,
+          "seconds": 28.87872410006821
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.8476633873474637,
+          "val_f1": 0.5216842855891809,
+          "seconds": 28.887793399975635
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.846612969817616,
+          "val_f1": 0.5223824777655577,
+          "seconds": 30.97163379995618
+        }
+      ]
+    },
+    "s7_frozen_resnet": {
+      "model": "Session 7 - ResNet-18 frozen + linear head (strategy 1)",
+      "n_trainable": 1539,
+      "best_epoch": 8,
+      "val_macro_f1": 0.6286040760850969,
+      "test_macro_f1": 0.5601061001265362
+    },
+    "s7_ft_layer4": {
+      "model": "Session 7 - ResNet-18 fine-tune layer4+fc (strategy 2)",
+      "layers": [
+        "layer4",
+        "fc"
+      ],
+      "n_trainable": 8395267,
+      "mean_seconds_per_epoch": 94.33995755001281,
+      "best_epoch": 3,
+      "val_macro_f1": 0.6450693653255349,
+      "test_macro_f1": 0.6132085643185695,
+      "epoch_history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.8889079486530765,
+          "val_f1": 0.5548610688721579,
+          "seconds": 70.6619870000286
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.6010898949665747,
+          "val_f1": 0.6181526287088351,
+          "seconds": 97.28434550005477
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.4724188906220859,
+          "val_f1": 0.5491210368128111,
+          "seconds": 99.44009799999185
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.4239628988042913,
+          "val_f1": 0.6450693653255349,
+          "seconds": 99.93466070003342
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.3422353222494947,
+          "val_f1": 0.6076154151899679,
+          "seconds": 99.40046579996124
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.30306160664480414,
+          "val_f1": 0.6100922713515908,
+          "seconds": 99.31818830000702
+        }
+      ]
+    },
+    "s7_ft_layer3_4": {
+      "model": "Session 7 - ResNet-18 fine-tune layer3+layer4+fc",
+      "layers": [
+        "layer3",
+        "layer4",
+        "fc"
+      ],
+      "n_trainable": 10494979,
+      "mean_seconds_per_epoch": 123.21158940003563,
+      "best_epoch": 3,
+      "val_macro_f1": 0.6598244017648796,
+      "test_macro_f1": 0.5807878635403598,
+      "epoch_history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.8805586393422883,
+          "val_f1": 0.5407862617284067,
+          "seconds": 122.43329369998537
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.5770428597992093,
+          "val_f1": 0.5969492015156241,
+          "seconds": 124.09439560002647
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.4386969729039245,
+          "val_f1": 0.5359734747193553,
+          "seconds": 123.55993450002279
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.4013653483359608,
+          "val_f1": 0.6598244017648796,
+          "seconds": 121.85352290002629
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.3676264281491287,
+          "val_f1": 0.595884590817712,
+          "seconds": 126.24509850004688
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.3036642029085232,
+          "val_f1": 0.6207564442603322,
+          "seconds": 121.08329120010603
+        }
+      ]
+    },
+    "s7_ft_full": {
+      "model": "Session 7 - ResNet-18 full fine-tune (strategy 3)",
+      "layers": null,
+      "n_trainable": 11178051,
+      "mean_seconds_per_epoch": 161.07169186661486,
+      "best_epoch": 3,
+      "val_macro_f1": 0.6444389349854238,
+      "test_macro_f1": 0.5644364384971694,
+      "epoch_history": [
+        {
+          "epoch": 0,
+          "train_loss": 0.8785451041573137,
+          "val_f1": 0.5381622901608111,
+          "seconds": 188.87132329994347
+        },
+        {
+          "epoch": 1,
+          "train_loss": 0.5868177054492572,
+          "val_f1": 0.5906946555217831,
+          "seconds": 163.94426639995072
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.46260719314916315,
+          "val_f1": 0.5378562981823024,
+          "seconds": 152.2440166999586
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.3984960549010315,
+          "val_f1": 0.6444389349854238,
+          "seconds": 145.23241269995924
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.3886806957399312,
+          "val_f1": 0.5820218337465823,
+          "seconds": 146.65447989990935
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.3581959429555527,
+          "val_f1": 0.5748934415011875,
+          "seconds": 169.48365219996776
+        }
+      ]
+    }
+  },
+  "notes": [
+    "Session 7 models use lesion-grouped dermoscopic StratifiedGroupKFold (seed=0).",
+    "Midterm SVM uses its own seed=42 lesion split; reported for completeness as best classical.",
+    "Test macro-F1 is computed once per model after selecting the best validation checkpoint."
+  ]
+}
