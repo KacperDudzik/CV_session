@@ -1,0 +1,1 @@
+GitHub: https://github.com/KacperDudzik/CV_session (project in final_project/, start with final_project/README.md). Final report: report.pdf. ISIC MILK10k leaderboard, Lesion Diagnosis: approach EADA-CV26-KD, official score 0.360 (local held-out estimate 0.402; gap explained in report section 6). Proof: submission.csv and leaderboard.png.
