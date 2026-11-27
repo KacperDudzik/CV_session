@@ -1,0 +1,22 @@
+{
+  "experiment": "vit_b16_last4__ep20",
+  "target": "diagnosis_1",
+  "seed": 0,
+  "label": "ViT-B/16 fine-tune last 4 blocks (S7 mini-challenge on S9 ViT); 20 epochs",
+  "arch": "vit_b_16",
+  "lr": 0.0001,
+  "train": [
+    "encoder.layers.encoder_layer_8",
+    "encoder.layers.encoder_layer_9",
+    "encoder.layers.encoder_layer_10",
+    "encoder.layers.encoder_layer_11",
+    "encoder.ln",
+    "heads"
+  ],
+  "epochs": 20,
+  "best_epoch": 15,
+  "n_trainable": 28355331,
+  "val_macro_f1": 0.7062529158374286,
+  "val_leaderboard_f1": 0.7068042795433002,
+  "minutes": 321.75
+}

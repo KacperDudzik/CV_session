@@ -1,0 +1,31 @@
+PASS  device  (cpu, torch 2.14.0+cpu)
+PASS  split: lesion-level, no leakage, one dermoscopic image per lesion  ({'train': 3668, 'val': 1048, 'test': 524})
+PASS  split: covers all 5,240 lesions
+PASS  split: every diagnosis_1 class in train
+PASS  split: every dx11 class in train
+PASS  split: frozen on disk (splits/*.csv)
+PASS  transform: load_image() == cached validation tensor (no train/serve skew)
+PASS  metric: leaderboard F1, perfect
+PASS  metric: leaderboard F1, hand example = 1/3
+PASS  class weights: Session 6 formula n / (C * n_c)
+PASS  class weights: one per class for 11 classes
+PASS  model: simple_cnn -> 3 outputs (diagnosis_1)  (306,147 trainable)
+PASS  model: resnet18_frozen -> 3 outputs (diagnosis_1)  (1,539 trainable)
+PASS  model: vit_b16_frozen -> 3 outputs (diagnosis_1)  (2,307 trainable)
+PASS  model: resnet18_layer4 -> 3 outputs (diagnosis_1)  (8,395,267 trainable)
+PASS  model: resnet18_layer3_4 -> 3 outputs (diagnosis_1)  (10,494,979 trainable)
+PASS  model: vit_b16_last2 -> 3 outputs (diagnosis_1)  (14,179,587 trainable)
+PASS  model: resnet18_full -> 3 outputs (diagnosis_1)  (11,178,051 trainable)
+PASS  model: simple_cnn -> 11 outputs (dx11)  (1,108,971 trainable)
+PASS  model: resnet18_frozen -> 11 outputs (dx11)  (5,643 trainable)
+PASS  model: vit_b16_frozen -> 11 outputs (dx11)  (8,459 trainable)
+PASS  model: resnet18_layer4 -> 11 outputs (dx11)  (8,399,371 trainable)
+PASS  model: resnet18_layer3_4 -> 11 outputs (dx11)  (10,499,083 trainable)
+PASS  model: vit_b16_last2 -> 11 outputs (dx11)  (14,185,739 trainable)
+PASS  model: resnet18_full -> 11 outputs (dx11)  (11,182,155 trainable)
+SKIP  results: diagnosis_1  (no finished runs yet)
+SKIP  results: dx11  (no finished runs yet)
+SKIP  predict(): 11-class model  (models/model_11class.pt not created yet)
+SKIP  submission.csv  (not created yet (needs the ISIC test files))
+
+all checks passed

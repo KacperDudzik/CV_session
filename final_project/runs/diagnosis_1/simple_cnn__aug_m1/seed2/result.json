@@ -1,0 +1,16 @@
+{
+  "experiment": "simple_cnn__aug_m1",
+  "target": "diagnosis_1",
+  "seed": 2,
+  "label": "CNN from scratch (S7); M1 augmentation",
+  "arch": "simple_cnn",
+  "train": null,
+  "lr": 0.001,
+  "augment": "m1",
+  "epochs": 10,
+  "best_epoch": 6,
+  "n_trainable": 306147,
+  "val_macro_f1": 0.5573150905757528,
+  "val_leaderboard_f1": 0.480286996478207,
+  "minutes": 0.34
+}

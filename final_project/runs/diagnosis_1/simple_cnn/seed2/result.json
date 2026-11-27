@@ -1,0 +1,15 @@
+{
+  "experiment": "simple_cnn",
+  "target": "diagnosis_1",
+  "seed": 2,
+  "label": "CNN from scratch (S7)",
+  "arch": "simple_cnn",
+  "train": null,
+  "lr": 0.001,
+  "epochs": 10,
+  "best_epoch": 6,
+  "n_trainable": 306147,
+  "val_macro_f1": 0.5337945107642077,
+  "val_leaderboard_f1": 0.526122730770972,
+  "minutes": 0.24
+}

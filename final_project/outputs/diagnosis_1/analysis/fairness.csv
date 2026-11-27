@@ -1,0 +1,8 @@
+attribute,group,n_lesions,macro_f1,accuracy,classes_present,note
+skin_tone_class,1,9,0.639,0.667,3,small group: unstable
+skin_tone_class,2,49,0.504,0.735,3,
+skin_tone_class,3,328,0.488,0.79,3,
+skin_tone_class,4,95,0.752,0.8,3,
+skin_tone_class,5,43,0.859,0.884,2,
+sex,female,217,0.606,0.774,3,
+sex,male,307,0.622,0.805,3,

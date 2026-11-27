@@ -1,0 +1,19 @@
+{
+  "experiment": "densenet121_block4",
+  "target": "diagnosis_1",
+  "seed": 0,
+  "label": "DenseNet-121 fine-tune last dense block (S7 homework)",
+  "arch": "densenet121",
+  "lr": 0.0001,
+  "train": [
+    "features.denseblock4",
+    "features.norm5",
+    "classifier"
+  ],
+  "epochs": 10,
+  "best_epoch": 4,
+  "n_trainable": 2163203,
+  "val_macro_f1": 0.6671864768711117,
+  "val_leaderboard_f1": 0.6510096602304091,
+  "minutes": 1.47
+}

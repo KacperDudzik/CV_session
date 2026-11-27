@@ -1,0 +1,17 @@
+{
+  "experiment": "densenet121_frozen",
+  "target": "diagnosis_1",
+  "seed": 2,
+  "label": "DenseNet-121 frozen + new head (S7 homework)",
+  "arch": "densenet121",
+  "train": [
+    "classifier"
+  ],
+  "lr": 0.001,
+  "epochs": 10,
+  "best_epoch": 5,
+  "n_trainable": 3075,
+  "val_macro_f1": 0.6165676134702683,
+  "val_leaderboard_f1": 0.638241535507616,
+  "minutes": 1.37
+}

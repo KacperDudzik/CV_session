@@ -1,0 +1,2 @@
+experiment,stage,label,seeds,val_macro_f1_mean,val_macro_f1_std,val_leaderboard_f1_mean,val_leaderboard_f1_std
+resnet18_layer3_4__oversample_ep20,final_candidates,"ResNet-18 fine-tune layer3+4 (S7 mini-challenge); oversampling, 20 epochs",3,0.4581245346514078,0.011204120523313887,0.43956136712381716,0.007567642966010311

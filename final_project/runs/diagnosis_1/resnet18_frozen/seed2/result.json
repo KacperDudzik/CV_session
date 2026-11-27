@@ -1,0 +1,17 @@
+{
+  "experiment": "resnet18_frozen",
+  "target": "diagnosis_1",
+  "seed": 2,
+  "label": "ResNet-18 frozen + new head (S7 strategy 1, S9)",
+  "arch": "resnet18",
+  "train": [
+    "fc"
+  ],
+  "lr": 0.001,
+  "epochs": 10,
+  "best_epoch": 5,
+  "n_trainable": 1539,
+  "val_macro_f1": 0.607807808265686,
+  "val_leaderboard_f1": 0.617593135638726,
+  "minutes": 0.36
+}

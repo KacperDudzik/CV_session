@@ -1,0 +1,17 @@
+{
+  "experiment": "efficientnet_b0_frozen",
+  "target": "diagnosis_1",
+  "seed": 0,
+  "label": "EfficientNet-B0 frozen + new head (S7 homework)",
+  "arch": "efficientnet_b0",
+  "train": [
+    "classifier"
+  ],
+  "lr": 0.001,
+  "epochs": 10,
+  "best_epoch": 4,
+  "n_trainable": 3843,
+  "val_macro_f1": 0.5674834219751049,
+  "val_leaderboard_f1": 0.5592653467125498,
+  "minutes": 0.7
+}

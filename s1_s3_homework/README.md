@@ -2,7 +2,7 @@
 
 The task is to predict `diagnosis_1` (Benign, Malignant, or Indeterminate) from a skin-lesion photograph. Age, sex, and body site may be used later. They are not a substitute for the image. The stretch goal is the 11-class label in `training_gt.csv`.
 
-MILK10k comes from the ISIC Archive (DOI 10.34970/648456). This copy has 10,480 images and 5,240 lesions, two images per lesion. The licence is CC-BY-NC. Attribution: MILK study team. Milestone 1 builds a leak-free split and a loader. It does not train a diagnostic model.
+MILK10k comes from the ISIC Archive (MILK study team, MILK10k Benchmark, 2025, doi:10.34970/262082; described in Tschandl P, et al., J Invest Dermatol 2026;146(2):357-364, doi:10.1016/j.jid.2025.06.1594). This copy has 10,480 images and 5,240 lesions, two images per lesion. The licence is CC-BY-NC. Attribution: MILK study team. Milestone 1 builds a leak-free split and a loader. It does not train a diagnostic model.
 
 ## Setup
 

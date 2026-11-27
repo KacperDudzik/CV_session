@@ -1,0 +1,16 @@
+{
+  "experiment": "simple_cnn__train_norm",
+  "target": "diagnosis_1",
+  "seed": 2,
+  "label": "CNN from scratch (S7); training-set mean/std normalisation",
+  "arch": "simple_cnn",
+  "train": null,
+  "lr": 0.001,
+  "norm": "train",
+  "epochs": 10,
+  "best_epoch": 6,
+  "n_trainable": 306147,
+  "val_macro_f1": 0.5329316575951837,
+  "val_leaderboard_f1": 0.5065593304596324,
+  "minutes": 0.29
+}

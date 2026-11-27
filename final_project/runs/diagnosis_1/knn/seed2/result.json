@@ -1,0 +1,11 @@
+{
+  "experiment": "knn",
+  "label": "kNN (k=15), 33 S5 features (S5)",
+  "target": "diagnosis_1",
+  "seed": 2,
+  "arch": "knn",
+  "features": "session5_33",
+  "best_epoch": null,
+  "val_macro_f1": 0.43570118529468127,
+  "val_leaderboard_f1": 0.43298206434503456
+}

@@ -1,0 +1,10 @@
+{
+  "experiment": "random_forest",
+  "label": "Random forest, 33 Session 5 features (M2)",
+  "target": "diagnosis_1",
+  "seed": 1,
+  "arch": "random_forest",
+  "features": "session5_33",
+  "val_macro_f1": 0.5380252699971481,
+  "val_leaderboard_f1": 0.4813973791807598
+}

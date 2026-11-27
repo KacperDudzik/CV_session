@@ -1,0 +1,19 @@
+{
+  "experiment": "efficientnet_b0_last2",
+  "target": "diagnosis_1",
+  "seed": 2,
+  "label": "EfficientNet-B0 fine-tune last 2 stages (S7 homework)",
+  "arch": "efficientnet_b0",
+  "lr": 0.0001,
+  "train": [
+    "features.7",
+    "features.8",
+    "classifier"
+  ],
+  "epochs": 10,
+  "best_epoch": 9,
+  "n_trainable": 1133235,
+  "val_macro_f1": 0.5973229186848447,
+  "val_leaderboard_f1": 0.6023588553750967,
+  "minutes": 0.61
+}

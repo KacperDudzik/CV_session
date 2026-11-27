@@ -1,0 +1,24 @@
+skip C:\Users\Kacper\Desktop\CV_session\final_project\runs\diagnosis_1\random_forest\seed0 (done)
+skip C:\Users\Kacper\Desktop\CV_session\final_project\runs\diagnosis_1\random_forest\seed1 (done)
+skip C:\Users\Kacper\Desktop\CV_session\final_project\runs\diagnosis_1\random_forest\seed2 (done)
+logistic_regression seed 0: val macro-F1 0.437
+logistic_regression seed 1: val macro-F1 0.437
+logistic_regression seed 2: val macro-F1 0.437
+knn seed 0: val macro-F1 0.436
+knn seed 1: val macro-F1 0.436
+knn seed 2: val macro-F1 0.436
+C:\Users\Kacper\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\svm\_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+svm_rbf seed 0: val macro-F1 0.462
+C:\Users\Kacper\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\svm\_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+svm_rbf seed 1: val macro-F1 0.462
+C:\Users\Kacper\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\svm\_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+svm_rbf seed 2: val macro-F1 0.462
+mlp_64 seed 0: val macro-F1 0.486
+mlp_64 seed 1: val macro-F1 0.491
+mlp_64 seed 2: val macro-F1 0.493
+mlp_256x2_reg seed 0: val macro-F1 0.538
+mlp_256x2_reg seed 1: val macro-F1 0.537
+mlp_256x2_reg seed 2: val macro-F1 0.531

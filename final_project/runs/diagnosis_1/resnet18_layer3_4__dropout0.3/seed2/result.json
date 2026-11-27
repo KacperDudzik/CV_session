@@ -1,0 +1,20 @@
+{
+  "experiment": "resnet18_layer3_4__dropout0.3",
+  "target": "diagnosis_1",
+  "seed": 2,
+  "label": "ResNet-18 fine-tune layer3+4 (S7 mini-challenge); dropout 0.3 before the head",
+  "arch": "resnet18",
+  "train": [
+    "layer3",
+    "layer4",
+    "fc"
+  ],
+  "lr": 0.0001,
+  "dropout": 0.3,
+  "epochs": 10,
+  "best_epoch": 7,
+  "n_trainable": 10494979,
+  "val_macro_f1": 0.6682748355665837,
+  "val_leaderboard_f1": 0.6770223431682537,
+  "minutes": 0.51
+}

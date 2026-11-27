@@ -1,0 +1,106 @@
+                                                                stage  seeds  val_macro_f1_mean  val_macro_f1_std  val_leaderboard_f1_mean  val_leaderboard_f1_std
+experiment                                                                                                                                                        
+resnet18_layer3_4__oversample_ep20                   final_candidates      3              0.704             0.006                    0.703                   0.006
+resnet18_full__lr3e-05_oversample_ep20               final_candidates      3              0.701             0.020                    0.701                   0.021
+vit_b16_last4__ep20                                  final_candidates      3              0.701             0.014                    0.701                   0.015
+resnet18_layer3_4__lr0.0001_ep20                                sweep      3              0.700             0.006                    0.700                   0.006
+resnet18_layer3_4__oversample_dropout0.3_ep20        final_candidates      3              0.698             0.017                    0.697                   0.014
+vit_b16_last4__oversample                            final_candidates      3              0.694             0.025                    0.693                   0.019
+resnet18_layer3_4__oversample                          regularization      3              0.694             0.003                    0.688                   0.013
+resnet18_layer3_4__no_class_weights                    regularization      3              0.694             0.020                    0.698                   0.020
+vit_b16_last4                                                  stage1      3              0.691             0.018                    0.694                   0.015
+resnet18_full__lr3e-05_ep20                                     sweep      3              0.681             0.017                    0.683                   0.020
+resnet18_layer3_4__lr0.0003_ep20                                sweep      3              0.679             0.005                    0.685                   0.007
+resnet18_layer3_4__lr3e-05_ep20                                 sweep      3              0.676             0.011                    0.680                   0.012
+vit_b16_last4__lr3e-05_ep10                                     sweep      3              0.674             0.007                    0.673                   0.019
+resnet18_layer3_4                                              stage1      3              0.673             0.022                    0.678                   0.025
+resnet18_layer3_4__wd1e-4                              regularization      3              0.669             0.021                    0.663                   0.015
+resnet18_layer3_4__dropout0.3                          regularization      3              0.668             0.003                    0.661                   0.017
+densenet121_block4                                      architectures      3              0.668             0.015                    0.665                   0.013
+vit_b16_last2                                                  stage1      3              0.667             0.019                    0.665                   0.018
+resnet18_layer3_4__dropout0.3_wd1e-4                   regularization      3              0.666             0.001                    0.664                   0.006
+vit_b16_last2__lr3e-05_ep10                                     sweep      3              0.661             0.014                    0.656                   0.022
+resnet18_layer3_4__aug_m1                              regularization      3              0.658             0.046                    0.660                   0.047
+resnet18_layer4                                                stage1      3              0.657             0.007                    0.664                   0.006
+resnet18_full                                                  stage1      3              0.651             0.014                    0.656                   0.014
+vgg16_classifier                                        architectures      3              0.631             0.006                    0.633                   0.015
+densenet121_frozen                                      architectures      3              0.628             0.010                    0.632                   0.006
+vit_b16_frozen                                                 stage1      3              0.614             0.009                    0.612                   0.008
+efficientnet_b0_last2                                   architectures      3              0.606             0.008                    0.609                   0.013
+resnet18_frozen                                                stage1      3              0.595             0.014                    0.605                   0.011
+vgg16_frozen                                            architectures      3              0.577             0.020                    0.575                   0.018
+efficientnet_b0_frozen                                  architectures      3              0.573             0.005                    0.575                   0.014
+simple_cnn__dropout0.3_wd1e-4                          regularization      3              0.541             0.008                    0.479                   0.051
+simple_cnn__aug_m1                                     regularization      3              0.539             0.016                    0.437                   0.103
+random_forest                                  M2 baseline (features)      3              0.537             0.001                    0.480                   0.003
+simple_cnn                                                     stage1      3              0.536             0.018                    0.510                   0.033
+mlp_256x2_reg                                  M2 baseline (features)      3              0.535             0.004                    0.524                   0.007
+simple_cnn__train_norm                                 regularization      3              0.525             0.013                    0.496                   0.018
+mlp_64                                         M2 baseline (features)      3              0.490             0.004                    0.477                   0.007
+svm_rbf                                        M2 baseline (features)      3              0.462             0.000                    0.459                   0.000
+logistic_regression                            M2 baseline (features)      3              0.437             0.000                    0.408                   0.000
+knn                                            M2 baseline (features)      3              0.436             0.000                    0.433                   0.000
+
+winner: resnet18_layer3_4__oversample_ep20 seed 2  val macro-F1 0.710  -> model_m4.pt
+training 1,539 of 11,178,051 parameters
+training 1,539 of 11,178,051 parameters
+training 1,539 of 11,178,051 parameters
+training 11,178,051 of 11,178,051 parameters
+training 11,178,051 of 11,178,051 parameters
+training 11,178,051 of 11,178,051 parameters
+training 11,178,051 of 11,178,051 parameters
+training 11,178,051 of 11,178,051 parameters
+training 11,178,051 of 11,178,051 parameters
+training 11,178,051 of 11,178,051 parameters
+training 11,178,051 of 11,178,051 parameters
+training 11,178,051 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 10,494,979 of 11,178,051 parameters
+training 8,395,267 of 11,178,051 parameters
+training 8,395,267 of 11,178,051 parameters
+training 8,395,267 of 11,178,051 parameters
+Traceback (most recent call last):
+  File "C:\Users\Kacper\Desktop\CV_session\final_project\evaluate.py", line 209, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Kacper\Desktop\CV_session\final_project\evaluate.py", line 205, in main
+    print("\n".join(lines))
+    ~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kacper\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1250.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 4848: character maps to <undefined>

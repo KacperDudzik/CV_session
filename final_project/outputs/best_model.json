@@ -1,0 +1,12 @@
+{
+  "target": "diagnosis_1",
+  "experiment": "resnet18_layer3_4__oversample_ep20",
+  "label": "ResNet-18 fine-tune layer3+4 (S7 mini-challenge); oversampling, 20 epochs",
+  "seed": 2,
+  "val_macro_f1": 0.7099060749663737,
+  "val_leaderboard_f1": 0.7097227965387857,
+  "run_dir": "runs/diagnosis_1/resnet18_layer3_4__oversample_ep20/seed2",
+  "model_file": "models/model_m4.pt",
+  "test_macro_f1": 0.6176814585483316,
+  "test_leaderboard_f1": 0.6176814585483316
+}

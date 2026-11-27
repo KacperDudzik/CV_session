@@ -1,0 +1,17 @@
+{
+  "experiment": "vgg16_classifier",
+  "target": "diagnosis_1",
+  "seed": 0,
+  "label": "VGG-16 fine-tune 3 FC layers, dropout 0.5 (S7 slide 18)",
+  "arch": "vgg16",
+  "train": [
+    "classifier"
+  ],
+  "lr": 0.0001,
+  "epochs": 10,
+  "best_epoch": 9,
+  "n_trainable": 119558147,
+  "val_macro_f1": 0.6272155346311664,
+  "val_leaderboard_f1": 0.6237665418787621,
+  "minutes": 9.96
+}

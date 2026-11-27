@@ -1,0 +1,27 @@
+{
+  "target": "dx11",
+  "experiment": "resnet18_layer3_4__oversample_ep20",
+  "label": "ResNet-18 fine-tune layer3+4 (S7 mini-challenge); oversampling, 20 epochs",
+  "seed": 0,
+  "val_macro_f1": 0.46657758084441275,
+  "val_leaderboard_f1": 0.44743984689382993,
+  "run_dir": "runs/dx11/resnet18_layer3_4__oversample_ep20/seed0",
+  "model_file": "models/model_11class.pt",
+  "thresholds": {
+    "AKIEC": 0.55,
+    "BCC": 0.2,
+    "BEN_OTH": 0.15,
+    "BKL": 0.25,
+    "DF": 0.25,
+    "INF": 0.25,
+    "MAL_OTH": 0.5,
+    "MEL": 0.35,
+    "NV": 0.1,
+    "SCCKA": 0.7,
+    "VASC": 0.15
+  },
+  "val_leaderboard_f1_thresholded": 0.4948985066430643,
+  "test_macro_f1": 0.40527255787286914,
+  "test_leaderboard_f1": 0.3850794406241464,
+  "test_leaderboard_f1_thresholded": 0.40191519771614076
+}

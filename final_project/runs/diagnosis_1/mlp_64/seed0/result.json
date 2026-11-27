@@ -1,0 +1,11 @@
+{
+  "experiment": "mlp_64",
+  "label": "MLP 33-64-3, 33 S5 features (S6)",
+  "target": "diagnosis_1",
+  "seed": 0,
+  "arch": "mlp_64",
+  "features": "session5_33",
+  "best_epoch": 37,
+  "val_macro_f1": 0.48588369567735407,
+  "val_leaderboard_f1": 0.47863772339119603
+}

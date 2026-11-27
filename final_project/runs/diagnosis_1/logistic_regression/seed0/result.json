@@ -1,0 +1,11 @@
+{
+  "experiment": "logistic_regression",
+  "label": "Logistic regression, 33 S5 features (S5)",
+  "target": "diagnosis_1",
+  "seed": 0,
+  "arch": "logistic_regression",
+  "features": "session5_33",
+  "best_epoch": null,
+  "val_macro_f1": 0.43687059331280187,
+  "val_leaderboard_f1": 0.4078609048797513
+}

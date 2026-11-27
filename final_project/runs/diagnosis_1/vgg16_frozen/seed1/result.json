@@ -1,0 +1,17 @@
+{
+  "experiment": "vgg16_frozen",
+  "target": "diagnosis_1",
+  "seed": 1,
+  "label": "VGG-16 frozen + new head (S7 slide 18)",
+  "arch": "vgg16",
+  "train": [
+    "classifier.6"
+  ],
+  "lr": 0.001,
+  "epochs": 10,
+  "best_epoch": 4,
+  "n_trainable": 12291,
+  "val_macro_f1": 0.554522088795569,
+  "val_leaderboard_f1": 0.5539578950305583,
+  "minutes": 5.13
+}

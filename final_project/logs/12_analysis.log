@@ -1,0 +1,25 @@
+               precision  recall  f1-score  support
+Benign             0.651   0.725     0.686  149.000
+Indeterminate      0.429   0.250     0.316   12.000
+Malignant          0.866   0.837     0.852  363.000
+accuracy           0.792   0.792     0.792    0.792
+macro avg          0.648   0.604     0.618  524.000
+weighted avg       0.795   0.792     0.792  524.000
+
+mask area by correctness
+          count   mean    50%
+correct                     
+False    109.0  0.256  0.236
+True     415.0  0.271  0.242
+
+fairness
+       attribute  group  n_lesions  macro_f1  accuracy  classes_present                  note
+skin_tone_class      1          9     0.639     0.667                3 small group: unstable
+skin_tone_class      2         49     0.504     0.735                3                      
+skin_tone_class      3        328     0.488     0.790                3                      
+skin_tone_class      4         95     0.752     0.800                3                      
+skin_tone_class      5         43     0.859     0.884                2                      
+            sex female        217     0.606     0.774                3                      
+            sex   male        307     0.622     0.805                3                      
+
+wrote C:\Users\Kacper\Desktop\CV_session\final_project\outputs\diagnosis_1\analysis

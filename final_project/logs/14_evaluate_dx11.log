@@ -1,0 +1,16 @@
+                                               stage  seeds  val_macro_f1_mean  val_macro_f1_std  val_leaderboard_f1_mean  val_leaderboard_f1_std
+experiment                                                                                                                                       
+resnet18_layer3_4__oversample_ep20  final_candidates      3              0.458             0.011                     0.44                   0.008
+thresholds (validation): {'AKIEC': 0.55, 'BCC': 0.2, 'BEN_OTH': 0.15, 'BKL': 0.25, 'DF': 0.25, 'INF': 0.25, 'MAL_OTH': 0.5, 'MEL': 0.35, 'NV': 0.1, 'SCCKA': 0.7, 'VASC': 0.15}
+val leaderboard F1: raw 0.447, thresholded 0.495 (optimistic: tuned on val)
+
+winner: resnet18_layer3_4__oversample_ep20 seed 0  val macro-F1 0.467  -> model_11class.pt
+training 10,499,083 of 11,182,155 parameters
+training 10,499,083 of 11,182,155 parameters
+training 10,499,083 of 11,182,155 parameters
+Macro-F1 on dx11 (11 classes). Same split for every model; mean ± std over seeds; validation chooses, test scored once.
+
+| Stage | Model | Seeds | Val macro-F1 | Test macro-F1 |
+|---|---|---|---|---|
+| final_candidates | ResNet-18 fine-tune layer3+4 (S7 mini-challenge); oversampling, 20 epochs | 3 | 0.458 ± 0.011 | 0.410 ± 0.019 |
+| final | **Best ? final: ResNet-18 fine-tune layer3+4 (S7 mini-challenge); oversampling, 20 epochs, seed 0** | 1 | **0.467** | **0.405** |

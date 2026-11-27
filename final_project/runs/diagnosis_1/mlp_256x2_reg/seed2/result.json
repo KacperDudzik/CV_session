@@ -1,0 +1,11 @@
+{
+  "experiment": "mlp_256x2_reg",
+  "label": "MLP 33-256-256-3 + dropout 0.3 + weight decay 1e-4 (S6)",
+  "target": "diagnosis_1",
+  "seed": 2,
+  "arch": "mlp_256x2_reg",
+  "features": "session5_33",
+  "best_epoch": 72,
+  "val_macro_f1": 0.5313364689033804,
+  "val_leaderboard_f1": 0.518785934158076
+}

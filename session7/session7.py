@@ -333,8 +333,12 @@ def predict(model: nn.Module, X: torch.Tensor, batch_size: int = 128) -> torch.T
 
 
 def class_weights_from_labels(y_train: torch.Tensor) -> torch.Tensor:
-    """Balanced weights: n / (n_classes * n_c), as in Session 6."""
-    return (len(y_train) / (len(CLASSES) * torch.bincount(y_train).float())).to(device)
+    """Balanced weights: n / (n_classes * n_c), as in Session 6.
+
+    n_classes is read from the labels, so the same code works for 3 or 11 classes.
+    """
+    counts = torch.bincount(y_train, minlength=len(CLASSES)).float()
+    return (len(y_train) / (len(counts) * counts)).to(device)
 
 
 def fit(
@@ -348,24 +352,37 @@ def fit(
     lr: float,
     batch_size: int = 64,
     aug: bool = True,
+    weight_decay: float = 0.0,
+    augment_fn=None,
+    class_weighted: bool = True,
+    oversample: bool = False,
 ) -> tuple[pd.DataFrame, dict]:
-    """Session-6 training loop with class-weighted CE and best-val-F1 checkpoint."""
+    """Session-6 training loop with class-weighted CE and best-val-F1 checkpoint.
+
+    Options (defaults = the class recipe): weight_decay (S6 regularization, e.g. 1e-4),
+    augment_fn (replaces the flips, S3), class_weighted (S6 loss weights),
+    oversample (S3: draw rare classes more often instead of weighting the loss).
+    """
     model.to(device)
-    optimizer = torch.optim.Adam(params, lr=lr)
-    weights = class_weights_from_labels(y_train)
+    optimizer = torch.optim.Adam(params, lr=lr, weight_decay=weight_decay)
+    weights = class_weights_from_labels(y_train) if class_weighted else None
     loss_fn = nn.CrossEntropyLoss(weight=weights)
+    sample_p = (1.0 / torch.bincount(y_train).float())[y_train] if oversample else None
     history: list[dict] = []
     best = {"f1": -1.0, "epoch": -1, "state": None}
 
     for epoch in range(epochs):
         model.train()
         t0, total = time.perf_counter(), 0.0
-        order = torch.randperm(len(X_train))
+        if oversample:
+            order = torch.multinomial(sample_p, len(X_train), replacement=True)
+        else:
+            order = torch.randperm(len(X_train))
         for i in range(0, len(X_train), batch_size):
             idx = order[i : i + batch_size]
             xb, yb = prep(X_train[idx]), y_train[idx].to(device)
             if aug:
-                xb = augment(xb)
+                xb = (augment_fn or augment)(xb)
             optimizer.zero_grad()
             loss = loss_fn(model(xb), yb)
             loss.backward()
@@ -534,14 +551,17 @@ def train_frozen_resnet_head(
 
 def make_partially_unfrozen_resnet(
     train_layers: tuple[str, ...] | None = ("layer4", "fc"),
+    n_classes: int = 3,
+    seed: int = SEED,
 ) -> tuple[nn.Module, list]:
     """Fresh ImageNet ResNet-18; only named blocks keep requires_grad=True.
 
     Pass ``train_layers=None`` for strategy 3 (full fine-tuning: every parameter).
+    ``n_classes=11`` gives the leaderboard head: nn.Linear(512, 11) (Session 10).
     """
-    torch.manual_seed(SEED)
+    torch.manual_seed(seed)
     model = resnet18(weights=ResNet18_Weights.IMAGENET1K_V1)
-    model.fc = nn.Linear(512, 3)
+    model.fc = nn.Linear(512, n_classes)
     if train_layers is None:
         for p in model.parameters():
             p.requires_grad = True
@@ -562,9 +582,10 @@ def fine_tune_resnet(
     epochs: int = 6,
     lr: float = 1e-4,
     confusion_tag: str | None = None,
+    n_classes: int = 3,
 ) -> tuple[nn.Module, pd.DataFrame, dict]:
     """Fine-tune ResNet-18. ``train_layers=None`` = strategy 3 (whole network)."""
-    model, trainable = make_partially_unfrozen_resnet(train_layers)
+    model, trainable = make_partially_unfrozen_resnet(train_layers, n_classes=n_classes)
     n_trainable = sum(p.numel() for p in trainable)
     hist, best = fit(
         model, trainable, X_train, y_train, X_val, y_val, epochs=epochs, lr=lr, aug=True

@@ -1,0 +1,21 @@
+{
+  "experiment": "resnet18_layer3_4__oversample_ep20",
+  "target": "diagnosis_1",
+  "seed": 0,
+  "label": "ResNet-18 fine-tune layer3+4 (S7 mini-challenge); oversampling, 20 epochs",
+  "arch": "resnet18",
+  "train": [
+    "layer3",
+    "layer4",
+    "fc"
+  ],
+  "lr": 0.0001,
+  "oversample": true,
+  "class_weights": false,
+  "epochs": 20,
+  "best_epoch": 15,
+  "n_trainable": 10494979,
+  "val_macro_f1": 0.7011882994308302,
+  "val_leaderboard_f1": 0.7011882994308302,
+  "minutes": 1.06
+}

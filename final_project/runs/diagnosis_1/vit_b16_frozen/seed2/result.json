@@ -1,0 +1,17 @@
+{
+  "experiment": "vit_b16_frozen",
+  "target": "diagnosis_1",
+  "seed": 2,
+  "label": "ViT-B/16 frozen + new head (S9)",
+  "arch": "vit_b_16",
+  "train": [
+    "heads"
+  ],
+  "lr": 0.001,
+  "epochs": 10,
+  "best_epoch": 5,
+  "n_trainable": 2307,
+  "val_macro_f1": 0.6240250273776833,
+  "val_leaderboard_f1": 0.612618776656178,
+  "minutes": 4.39
+}

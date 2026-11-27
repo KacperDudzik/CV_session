@@ -7,3 +7,9 @@ __pycache__/
 **/features_v2.csv
 **/images_*.pt
 session9/_output/
+final_project/cache/
+final_project/isic_test/
+final_project/_backups/
+# the two final models are needed by predict() and make_submission.py (45 MB each)
+!final_project/models/model_m4.pt
+!final_project/models/model_11class.pt

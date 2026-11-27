@@ -1,0 +1,20 @@
+{
+  "experiment": "vit_b16_last2__lr3e-05_ep10",
+  "target": "diagnosis_1",
+  "seed": 0,
+  "label": "ViT-B/16 fine-tune last 2 blocks (S7 strategy 2 on S9 ViT); lr 3e-05, 10 epochs",
+  "arch": "vit_b_16",
+  "lr": 3e-05,
+  "train": [
+    "encoder.layers.encoder_layer_10",
+    "encoder.layers.encoder_layer_11",
+    "encoder.ln",
+    "heads"
+  ],
+  "epochs": 10,
+  "best_epoch": 9,
+  "n_trainable": 14179587,
+  "val_macro_f1": 0.6771168315245691,
+  "val_leaderboard_f1": 0.6806285187068105,
+  "minutes": 5.22
+}

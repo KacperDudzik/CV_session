@@ -1,0 +1,13 @@
+train 3668 (3668, 3, 224, 224) torch.uint8
+  diagnosis_1: {'Malignant': 2545, 'Benign': 1037, 'Indeterminate': 86}
+  dx11: {'BCC': 1760, 'NV': 517, 'BKL': 383, 'SCCKA': 334, 'MEL': 323, 'AKIEC': 207, 'DF': 38, 'INF': 35, 'VASC': 33, 'BEN_OTH': 31, 'MAL_OTH': 7}
+  skin_tone_class: {3: 2203, 4: 773, 2: 345, 5: 262, 1: 81, 0: 4}  sex: {'male': 2205, 'female': 1463}
+val 1048 (1048, 3, 224, 224) torch.uint8
+  diagnosis_1: {'Malignant': 726, 'Benign': 297, 'Indeterminate': 25}
+  dx11: {'BCC': 510, 'NV': 154, 'BKL': 108, 'SCCKA': 93, 'MEL': 86, 'AKIEC': 60, 'VASC': 10, 'BEN_OTH': 10, 'INF': 9, 'DF': 6, 'MAL_OTH': 2}
+  skin_tone_class: {3: 643, 4: 198, 2: 112, 5: 78, 1: 15, 0: 2}  sex: {'male': 640, 'female': 408}
+test 524 (524, 3, 224, 224) torch.uint8
+  diagnosis_1: {'Malignant': 363, 'Benign': 149, 'Indeterminate': 12}
+  dx11: {'BCC': 252, 'NV': 75, 'BKL': 53, 'SCCKA': 46, 'MEL': 41, 'AKIEC': 36, 'DF': 8, 'INF': 6, 'VASC': 4, 'BEN_OTH': 3}
+  skin_tone_class: {3: 328, 4: 95, 2: 49, 5: 43, 1: 9}  sex: {'male': 307, 'female': 217}
+23 s

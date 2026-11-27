@@ -1,0 +1,15 @@
+{
+  "experiment": "resnet18_full",
+  "target": "diagnosis_1",
+  "seed": 0,
+  "label": "ResNet-18 full fine-tune (S7 strategy 3)",
+  "arch": "resnet18",
+  "train": null,
+  "lr": 0.0001,
+  "epochs": 10,
+  "best_epoch": 7,
+  "n_trainable": 11178051,
+  "val_macro_f1": 0.6649873596288766,
+  "val_leaderboard_f1": 0.6717774067065524,
+  "minutes": 0.94
+}

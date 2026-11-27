@@ -1,0 +1,11 @@
+{
+  "experiment": "svm_rbf",
+  "label": "SVM RBF (C=1), 33 S5 features (midterm)",
+  "target": "diagnosis_1",
+  "seed": 0,
+  "arch": "svm_rbf",
+  "features": "session5_33",
+  "best_epoch": null,
+  "val_macro_f1": 0.4617273857665964,
+  "val_leaderboard_f1": 0.45905621786639345
+}

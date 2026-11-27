@@ -1,0 +1,19 @@
+{
+  "experiment": "resnet18_layer3_4__lr0.0003_ep20",
+  "target": "diagnosis_1",
+  "seed": 2,
+  "label": "ResNet-18 fine-tune layer3+4 (S7 mini-challenge); lr 0.0003, 20 epochs",
+  "arch": "resnet18",
+  "train": [
+    "layer3",
+    "layer4",
+    "fc"
+  ],
+  "lr": 0.0003,
+  "epochs": 20,
+  "best_epoch": 14,
+  "n_trainable": 10494979,
+  "val_macro_f1": 0.6849796837948842,
+  "val_leaderboard_f1": 0.689748810283079,
+  "minutes": 1.03
+}

@@ -1,0 +1,24 @@
+{
+  "experiment": "vit_b16_last4__oversample",
+  "target": "diagnosis_1",
+  "seed": 0,
+  "label": "ViT-B/16 fine-tune last 4 blocks (S7 mini-challenge on S9 ViT); oversampling",
+  "arch": "vit_b_16",
+  "lr": 0.0001,
+  "train": [
+    "encoder.layers.encoder_layer_8",
+    "encoder.layers.encoder_layer_9",
+    "encoder.layers.encoder_layer_10",
+    "encoder.layers.encoder_layer_11",
+    "encoder.ln",
+    "heads"
+  ],
+  "oversample": true,
+  "class_weights": false,
+  "epochs": 10,
+  "best_epoch": 1,
+  "n_trainable": 28355331,
+  "val_macro_f1": 0.7217663683595391,
+  "val_leaderboard_f1": 0.7152728618660326,
+  "minutes": 6.11
+}

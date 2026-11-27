@@ -1,0 +1,20 @@
+{
+  "experiment": "resnet18_layer3_4__aug_m1",
+  "target": "diagnosis_1",
+  "seed": 0,
+  "label": "ResNet-18 fine-tune layer3+4 (S7 mini-challenge); M1 augmentation: flips, rotation 15, colour 0.1",
+  "arch": "resnet18",
+  "train": [
+    "layer3",
+    "layer4",
+    "fc"
+  ],
+  "lr": 0.0001,
+  "augment": "m1",
+  "epochs": 10,
+  "best_epoch": 8,
+  "n_trainable": 10494979,
+  "val_macro_f1": 0.6155546694389458,
+  "val_leaderboard_f1": 0.6162938337615159,
+  "minutes": 0.57
+}

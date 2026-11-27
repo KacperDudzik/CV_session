@@ -1,0 +1,20 @@
+{
+  "experiment": "resnet18_layer3_4__no_class_weights",
+  "target": "diagnosis_1",
+  "seed": 0,
+  "label": "ResNet-18 fine-tune layer3+4 (S7 mini-challenge); no class weights (control)",
+  "arch": "resnet18",
+  "train": [
+    "layer3",
+    "layer4",
+    "fc"
+  ],
+  "lr": 0.0001,
+  "class_weights": false,
+  "epochs": 10,
+  "best_epoch": 7,
+  "n_trainable": 10494979,
+  "val_macro_f1": 0.7104767889705869,
+  "val_leaderboard_f1": 0.7145080951520274,
+  "minutes": 0.51
+}

@@ -1,0 +1,21 @@
+{
+  "experiment": "resnet18_layer3_4__dropout0.3_wd1e-4",
+  "target": "diagnosis_1",
+  "seed": 0,
+  "label": "ResNet-18 fine-tune layer3+4 (S7 mini-challenge); dropout 0.3 + weight decay 1e-4",
+  "arch": "resnet18",
+  "train": [
+    "layer3",
+    "layer4",
+    "fc"
+  ],
+  "lr": 0.0001,
+  "dropout": 0.3,
+  "weight_decay": 0.0001,
+  "epochs": 10,
+  "best_epoch": 9,
+  "n_trainable": 10494979,
+  "val_macro_f1": 0.665094141167261,
+  "val_leaderboard_f1": 0.6700270555613111,
+  "minutes": 0.51
+}

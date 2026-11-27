@@ -1,0 +1,17 @@
+{
+  "experiment": "resnet18_full__lr3e-05_oversample_ep20",
+  "target": "diagnosis_1",
+  "seed": 2,
+  "label": "ResNet-18 full fine-tune (S7 strategy 3); lr 3e-05, oversampling, 20 epochs",
+  "arch": "resnet18",
+  "train": null,
+  "lr": 3e-05,
+  "oversample": true,
+  "class_weights": false,
+  "epochs": 20,
+  "best_epoch": 11,
+  "n_trainable": 11178051,
+  "val_macro_f1": 0.6858375014951962,
+  "val_leaderboard_f1": 0.6850481009495253,
+  "minutes": 1.76
+}
