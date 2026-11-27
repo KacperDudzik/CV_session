@@ -122,6 +122,12 @@ Test split, final 3-class model ([outputs/diagnosis_1/analysis/](outputs/diagnos
   made with high confidence (p = 0.95–1.00). Lesion size does not explain errors: the mean mask
   area is 0.26 for wrong and 0.27 for correct answers.
 
+![Eight misclassified test lesions with the Session 8 darkness + Otsu mask (green)](outputs/diagnosis_1/analysis/misclassified.png)
+
+*Eight misclassified test lesions (random sample of the errors). Title: true / predicted class,
+the model's probability for its prediction, mask area, skin tone. Green: Session 8 darkness +
+Otsu lesion mask.*
+
 **Fairness** (`fairness.csv`, test split):
 
 | Group | Lesions | Macro-F1 | Accuracy |
